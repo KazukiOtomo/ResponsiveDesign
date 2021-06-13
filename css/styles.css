@@ -2,8 +2,30 @@
 ※論理式周辺の()には、半角空白が必要なので、注意
 今回は、画面幅が特定の値になったら、背景色が変わる仕様になっている。 */
 
-@media (min-width: 600px) and (max-width: 800px) {
+
+/* @media (min-width: 600px) and (max-width: 800px) {
     body {
         background: skyblue;
     }
-}
+} */
+
+
+/* cssでは、上から順に実行されていくので、細かい条件式で縛る必要はない。
+今回であれば、画面幅が600pxの場合、「medium screen」が割り当てられ、
+画面幅が800pxになった場合、「large screen」が割り当てられる。 */
+
+
+/* common */
+
+
+/* small screen */
+
+
+/* medium screen */
+
+@media (min-width: 600px) {}
+
+
+/* large screen */
+
+@media (min-width: 800px) {}

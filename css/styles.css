@@ -1,0 +1,9 @@
+/* Viewportの幅が、600px以上800px以下の場合のスタイルを指定する
+※論理式周辺の()には、半角空白が必要なので、注意
+今回は、画面幅が特定の値になったら、背景色が変わる仕様になっている。 */
+
+@media (min-width: 600px) and (max-width: 800px) {
+    body {
+        background: skyblue;
+    }
+}

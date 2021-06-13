@@ -20,12 +20,54 @@
 
 /* small screen */
 
+body {
+    margin: 0 auto;
+}
+
+aside {
+    display: none;
+}
+
+.image {
+    background: tomato;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.textbox {
+    background: silver;
+    height: 100px;
+    margin: 0 auto;
+}
+
 
 /* medium screen */
 
-@media (min-width: 600px) {}
+@media (min-width: 600px) {
+    section {
+        display: flex;
+    }
+    .image {
+        width: 200px;
+        background: turquoise;
+    }
+    .textbox {
+        flex: 1;
+        background: violet;
+    }
+}
 
 
 /* large screen */
 
-@media (min-width: 800px) {}
+@media (min-width: 800px) {
+    section {
+        width: 800px;
+        margin: 0 auto;
+    }
+    aside {
+        display: block;
+        background: yellowgreen;
+        width: 160px;
+    }
+}
